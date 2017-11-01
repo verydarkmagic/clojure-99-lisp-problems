@@ -6,4 +6,3 @@
         (if (empty? tail)
             head
             (recur (conj tail second))))
-

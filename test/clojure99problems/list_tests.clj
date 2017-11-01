@@ -30,4 +30,13 @@
         ;;(testing (is (= (before-last one) (penultimate one))))
         (testing (is (= (before-last empty) (penultimate empty)))))
     )
+    (deftest test-kth
+        "test the kth function"
+        (let [empty (n-element-list 0)
+                one (n-element-list 1)
+                five (n-element-list 5)]
+        (testing (is (= (kth five 4) (nth five 4))))
+        (testing (is (= (kth one 0) (nth one 0))))
+        ;;(testing (is (= (kth empty 0) (nth empty 0))))) ;;nth throws indexoutofbounds
+    )
 )

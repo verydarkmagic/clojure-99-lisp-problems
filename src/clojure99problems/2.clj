@@ -1,7 +1,7 @@
 (ns clojure99problems.core)
 
 (defn before-last
-    "2 problem"
+    "returns the 2nd element from behind"
     [[head second & tail]]
         (if (empty? tail)
             head

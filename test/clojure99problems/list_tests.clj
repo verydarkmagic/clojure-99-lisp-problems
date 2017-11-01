@@ -36,7 +36,16 @@
                 one (n-element-list 1)
                 five (n-element-list 5)]
         (testing (is (= (kth five 4) (nth five 4))))
-        (testing (is (= (kth one 0) (nth one 0))))
+        (testing (is (= (kth one 0) (nth one 0)))))
         ;;(testing (is (= (kth empty 0) (nth empty 0))))) ;;nth throws indexoutofbounds
+    )
+    (deftest test-my-count
+        "test the my-count function"
+        (let [empty (n-element-list 0)
+                one (n-element-list 1)
+                five (n-element-list 5)]
+        (testing (is (= (my-count five) (count five))))
+        (testing (is (= (my-count one) (count one))))
+        (testing (is (= (my-count empty) (count empty)))))
     )
 )

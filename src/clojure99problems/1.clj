@@ -1,7 +1,7 @@
 (ns clojure99problems.core)
 
 (defn my-last
-    "1 problem"
+    "returns last element of list"
     [[head & tail]]
         (if (empty? tail)
             head

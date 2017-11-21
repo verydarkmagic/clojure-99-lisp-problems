@@ -48,4 +48,13 @@
         (testing (is (= (my-count one) (count one))))
         (testing (is (= (my-count empty) (count empty)))))
     )
+    (deftest test-my-reverse
+        "test the my-count function"
+        (let [empty (n-element-list 0)
+                one (n-element-list 1)
+                five (n-element-list 5)]
+        (testing (is (= (my-reverse five) (reverse five))))
+        (testing (is (= (my-reverse one) (reverse one))))
+        (testing (is (= (my-reverse empty) (reverse empty)))))
+    )
 )

@@ -57,4 +57,9 @@
         (testing (is (= (my-reverse one) (reverse one))))
         (testing (is (= (my-reverse empty) (reverse empty)))))
     )
+    (deftest test-palindrome
+        "test the palindrome"
+        (testing (is (= true (palindrome(list 1 2 3 2 1)))))
+        (testing (is (= false (palindrome(list 1 2 3 2 2)))))
+    )
 )

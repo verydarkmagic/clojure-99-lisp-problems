@@ -62,4 +62,11 @@
         (testing (is (= true (palindrome(list 1 2 3 2 1)))))
         (testing (is (= false (palindrome(list 1 2 3 2 2)))))
     )
+    (deftest test-flatten
+        "test my-flatten function"
+        (let [foo (list 1 2 (list 4 5 (list 1)))
+              bar (list 1 2 4 5 1)]
+        (testing (is (= (my-flatten foo) (flatten foo))))
+        (testing (is (= (my-flatten foo) (flatten bar)))))
+    )
 )

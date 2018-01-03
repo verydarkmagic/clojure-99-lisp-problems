@@ -75,7 +75,7 @@
         )
     )
     (deftest test-compress
-        "test compress function"
+        "test the compress function"
         (testing (is (= (compress (list 1 1 1 2 3 4 4 4 5 5 6 6 6)) (list 1 2 3 4 5 6))))
         (testing (is (= (compress (list 12 12 1 3 12 12)) (list 12 1 3 12))))
     )
